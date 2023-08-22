@@ -9,7 +9,6 @@ public class TestSecurity {
     @GetMapping("/hello")
     public String hello(){
         var u = SecurityContextHolder.getContext().getAuthentication();
-        u.getAuthorities();
         return "Hello";
     }
 }
